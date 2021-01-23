@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Static/style.css">
+    <link rel="stylesheet" type="text/css" href="Static/slick-1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><link rel="stylesheet" type="text/css" href="Static/slick-1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="Static/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="Static/index.js"></script>
+    <title>Строительство и индивидуальное проектирование домов, коттеджей и бань</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="prev">
+            <div class="menu">
+                <nav class="nav-menu">
+                    <ul class="nav-menu-ul">
+                        <div class="grid-prev"><li class="nav-menu-li"><a class="nav-a" href="#">Главная</a></li></div>
+                        <div class="grid-prev"><li class="nav-menu-li"><a class="nav-a" href="#">О нас</a></li></div>
+                        <div class="grid-prev"><li class="nav-menu-li"><a class="nav-a" href="#">Услуги</a></li></div>
+                        <div class="grid-prev"><li class="nav-menu-li"><a class="nav-a" href="#">Готовые работы</a></li></div>
+                        <div class="grid-prev"><li class="nav-menu-li"><a class="nav-a" href="#">Отзывы</a></li></div>
+                        <div class="grid-prev"><li class="nav-menu-li"><a class="nav-a" href="#">Контакты</a></li></div>
+                    </ul>
+                </nav>
+            </div>
+            <div class="main-title">
+                <div class="main-title-div">
+                    <div class="title">
+                        <div class="title-1">Строительство</div>
+                        <div class="title-2">и индивидуальное проектирование домов, коттеджей и бань</div>
+                        <div class="title-3">
+                            <ul>
+                                <li>Качественная работа</li>
+                                <li>Соблюдение сроков</li>
+                                <li>Европейские технологии</li>
+                                <li>Лучшие сторойматериалы</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <form class="form" method="POST" action="http://localhost:3001/stroy">
+                        <div class="form-div-one">Отправить заявку</div>
+                        <input type="text" class="form-input" name="user" placeholder="Ваше имя" required>
+                        <input type="text" class="form-input" name="phone" placeholder="Номер телефона" required>
+                        <button class="form-button" id="form" >Отправить заявку</button>
+                        <div>
+                            <div id="form_result"></div>
+                            <div class="form-div-two">Ваши данные будут у нас</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="iconki">
+            <div class="iconki-div">
+                <div class="iconki-img" id="iconki-img-1"></div>
+                <div class="iconki-p">Лучшие цены</div>
+            </div>
+            <div class="iconki-div">
+                <div class="iconki-img" id="iconki-img-2"></div>
+                <div class="iconki-p">Соблюдаем сроки</div>
+            </div>
+            <div class="iconki-div">
+                <div class="iconki-img" id="iconki-img-3"></div>
+                <div class="iconki-p">Экологичные материалы</div>
+            </div>
+            <div class="iconki-div">
+                <div class="iconki-img" id="iconki-img-4"></div>
+                <div class="iconki-p">Иновационные технологии</div>
+            </div>
+            <div class="iconki-div">
+                <div class="iconki-img" id="iconki-img-5"></div>
+                <div class="iconki-p">Высокое качество работ</div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="history-div">
+                <div class="histoty-div-tittle">Краткая история</div>
+                <div class="histoty-div-p">История нашей компании начинается
+                    в 2000 году, предприниматель Виктор
+                    Самоилов решается на опасное 
+                    решение и открывает свою компанию 
+                    в городе Москва, изначально в его
+                    компанде было 6 человек,  и общими
+                    усилиями Виктор и его сотрудники 
+                    уже в 2001 году получают награду за
+                    лучший дом из бруса в Москвоской 
+                    области.</div>
+            </div>
+            <div class="history-div">
+                <div class="histoty-div-tittle">Мы лидера рынка</div>
+                <div class="histoty-div-p">Благодаря нашей ценовой политике и
+                    качеству выполнения работ мы 
+                    является лидерами рынка  
+                    строительных услуг в России,  наши 
+                    заказчики имеют только хорошие и
+                    положительные эмоции при работе
+                    с нами, мы не когда не выхоим за 
+                    обьявленные сроки.</div>
+            </div>
+        </div>
+        <div class="services">
+            <div class="our-services">Наши Услуги</div>
+            <div class="main-services">
+                <div class="div-services">
+                    <div class="div-services-p">Индивидуальная разработка проекта и его реализация</div>
+                    <div class="div-services-img" id="services-img-1"></div>
+                    <div class="div-services-button-main">
+                        <button class="div-services-button">Заказать звонок</button>
+                    </div>
+                </div>
+                <div class="div-services">
+                    <div class="div-services-p">Строительство домов, бань и коттеджей любой сложности</div>
+                    <div class="div-services-img" id="services-img-2"></div>
+                    <div class="div-services-button-main">
+                        <button class="div-services-button">Заказать звонок</button>
+                    </div>
+                </div>
+                <div class="div-services">
+                    <div class="div-services-p">Разработка и реализация фундаметов</div>
+                    <div class="div-services-img" id="services-img-3"></div>
+                    <div class="div-services-button-main">
+                        <button class="div-services-button">Заказать звонок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews">
+            <div class="reviews-tittle">Отзывы наших клиентов</div>
+            <hr class="peviews-hr">
+            <!--ВИД КАРУСЕЛИ БЛОКОВ ОТЗЫВОВ--->
+            <div class="main-reviews">
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-1"></div>
+                                <div class="div-reviews-tittle">Дмитрий</div>
+                                <div class="div-reviews-p">Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-2"></div>
+                                <div class="div-reviews-tittle">Юлия</div>
+                                <div class="div-reviews-p">Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-3"></div>
+                                <div class="div-reviews-tittle">Оксана</div>
+                                <div class="div-reviews-p">
+                                    Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-4"></div>
+                                <div class="div-reviews-tittle">Алексей</div>
+                                <div class="div-reviews-p">
+                                    Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-1"></div>
+                                <div class="div-reviews-tittle">Дмитрий</div>
+                                <div class="div-reviews-p">Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-2"></div>
+                                <div class="div-reviews-tittle">Юлия</div>
+                                <div class="div-reviews-p">Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-3"></div>
+                                <div class="div-reviews-tittle">Оксана</div>
+                                <div class="div-reviews-p">
+                                    Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-4"></div>
+                                <div class="div-reviews-tittle">Алексей</div>
+                                <div class="div-reviews-p">
+                                    Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально.
+                                </div>
+                            </div>
+                        </div>
+ 
+
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-1"></div>
+                                <div class="div-reviews-tittle">Дмитрий</div>
+                                <div class="div-reviews-p">Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-2"></div>
+                                <div class="div-reviews-tittle">Юлия</div>
+                                <div class="div-reviews-p">Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-3"></div>
+                                <div class="div-reviews-tittle">Оксана</div>
+                                <div class="div-reviews-p">
+                                    Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально. 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="div-reviews">
+                                <div class="div-reviews-img" id="div-reviews-img-4"></div>
+                                <div class="div-reviews-tittle">Алексей</div>
+                                <div class="div-reviews-p">
+                                    Всем рекомендую данную 
+                                    орагнизацию, сделали все очень
+                                    быстро и качественно, я очень 
+                                    рад, что обратился именно к 
+                                    вам, коттедж более 300кв.м 
+                                    построили за пол года, все 
+                                    идеально.
+                                </div>
+                            </div>
+                        </div>
+            </div>
+            <hr class="peviews-hr">
+        </div>
+        <div class="calculator">
+            <div class="main-calculator">
+                <div class="calculator-tittle">Калькулятор рассчета стоимости работ</div>
+                <div class="calculator-grid">
+                    <!--ВЫБОР ТИПА ДОМА-->
+                    <div class="calculator-div" id="calculator-1">
+                        <div class="calculator-div-tittle">
+                            <span class="number">1</span> Выберите тип дома
+                        </div>
+                        <div class="calculator-div-main-img">
+                            <div data-class="900000" class="tupe-house" id="tupe-house1"><img class="tupe-house-img" src="Static/img/calculator1.png"></div>
+                            <div data-class="780000" class="tupe-house" id="tupe-house2"><img class="tupe-house-img" src="Static/img/calculator2.png"></div>
+
+                            <!-- <button class="tupe-house-1" id="tupe-house-1"></button>
+                            <button class="tupe-house-2" id="tupe-house-1"></button> -->
+                        </div>
+                    </div>
+                    <!--ВЫБОР КЛАССА МАТЕРИАЛА-->
+                    <div class="calculator-div" id="calculator-2">
+                        <div class="calculator-div-tittle">
+                            <span class="number">2</span> Выберите класс материалов
+                        </div>
+
+                        <div class="calculator-div-material">
+                            <div>
+                                <button data-class="150000" class="click-1" id="tupe-1"></button>
+                            </div>
+                            <div>
+                                <span class="material">Материалы премиум класса - 150000 рублей</span><br>
+                                <a class="material-a" href="#">подбробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="calculator-div-material">
+                            <div>
+                                <button data-class="150000" class="click-1" id="tupe-2"></button>
+                            </div>
+                            <div>
+                                <span class="material">Экологически чистые материалы - 100000 рублей</span><br>
+                                <a class="material-a" href="#">подбробнее</a>
+                            </div>
+                        </div>
+
+                        <div class="calculator-div-material">
+                            <div>
+                                <button data-class="150000" class="click-1" id="tupe-3"></button>
+                            </div>
+                            <div>
+                                <span class="material">Огнеупорные материалы - 120000 рублей</span><br>
+                                <a class="material-a" href="#">подбробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--ВЫБОР СРОКОВ-->
+                    <div class="calculator-div" id="calculator-3">
+                        <div class="calculator-div-tittle">
+                            <span class="number">3</span> Выбор скроков
+                        </div>
+                        <div class="calculator-div-time">
+                            <div>
+                                <button data-class="50000" class="click-1" id="time-1"></button>
+                            </div>
+                            <div>
+                                <span class="material">Кратчайшие сроки - 50000 рублей</span><br>
+                            </div>
+                        </div>
+                        <div class="calculator-div-time">
+                            <div>
+                                <button data-class="0" class="click-1" id="time-2"></button>
+                            </div>
+                            <div>
+                                <span class="material">Сроки указаные изначально</span><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cost-main">
+                    <div class="cost-tittle">Итоговая стоимость: <span class="cost-number" id="info">0</span> рублей</div>
+                    <div><button class="cost-button">Узнать стоимость</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-title">Готовые проекты</div>
+            <hr class="peviews-hr">
+            <div class="main-slide">
+                <div class="slide">
+                    <div class="project-div">
+                        <div class="project-img-main">
+                            <div>
+                                <div class="project-img" id="project-img-4"></div>
+                                <div class="project-img" id="project-img-3"></div>
+                                <div class="project-img" id="project-img-2"></div>
+                            </div>
+                            <div>
+                                <div class="project-img" id="project-img-1"></div>
+                            </div>
+                        </div>
+                        <div class="project-text">На фото мы видим выполненый проект загородного 
+                            коттеджа, исполненый за пол года с полного нуля, 
+                            проект дома был разработан нашими дизайнерами 
+                            специально для заказчика На фото мы видим 
+                            выполненый проект загородного коттеджа, исполненый 
+                            за пол года с полного нуля, проект дома был 
+                            разработан нашими дизайнерами специально 
+                            для заказчика
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="project-div">
+                        <div class="project-img-main">
+                            <div>
+                                <div class="project-img" id="project-img-4"></div>
+                                <div class="project-img" id="project-img-3"></div>
+                                <div class="project-img" id="project-img-2"></div>
+                            </div>
+                            <div>
+                                <div class="project-img" id="project-img-1"></div>
+                            </div>
+                        </div>
+                        <div class="project-text">На фото мы видим выполненый проект загородного 
+                            коттеджа, исполненый за пол года с полного нуля, 
+                            проект дома был разработан нашими дизайнерами 
+                            специально для заказчика На фото мы видим 
+                            выполненый проект загородного коттеджа, исполненый 
+                            за пол года с полного нуля, проект дома был 
+                            разработан нашими дизайнерами специально 
+                            для заказчика
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="peviews-hr">
+        </div>
+        <div class="btv"></div>
+        <div class="contact">
+            <div class="contact-main">
+                <div class="our-contact">Наши Контакты</div>
+                <div class="container-contact">
+                    <div class="div-main-contact-1" id="cont1">
+                        <div class="main-contact">Контактная информация</div>
+                    </div>
+                    <div class="div-main-contact-2" id="cont2">
+                        <div class="main-contact-div">
+                            <div id="contact-img-1"></div>
+                            <div>Мы находимся по адресу г,Москва, проспект Победы 91, офис 71</div>
+                        </div>
+                        <div class="main-contact-div">
+                            <div id="contact-img-2"></div>
+                            <div>Работаем Ежедневно с 10:00 до 23:00</div>
+                        </div>
+                        <div class="main-contact-div">
+                            <div id="contact-img-3"></div>
+                            <div>8 900 555 8881</div>
+                        </div>
+                    </div>
+                    <div class="div-main-contact-3" id="cont3">
+                        <div class="main-contact">Наши награды</div>
+                    </div>
+                    <div class="div-main-contact-4" id="cont4">
+                        <div class="awards"></div>
+                        <div class="awards"></div>
+                        <div class="awards"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="map-main"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8168.075671717984!2d39.88421824912166!3d59.2156987881298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ae98286e757bcf%3A0x8070e4dd08ca1291!2z0KHQvtCy0LrQvtC80LHQsNC90Lo!5e0!3m2!1sru!2sru!4v1603810862945!5m2!1sru!2sru"></iframe></div>
+        </div>
+        <div class="footer">
+            <div class="main-footer">
+                <div class="footer-img"></div>
+                <div class="div-footer-1">
+                    <span><a class="footer-a" href="#">Главная</a></span>
+                    <span><a class="footer-a" href="#">О нас</a></span>
+                    <span><a class="footer-a" href="#">Услуги</a></span>
+                    <span><a class="footer-a" href="#">Готовые работы</a></span>
+                    <span><a class="footer-a" href="#">Отзывы</a></span>
+                </div>
+                <div>
+                    <div class="footer-contact">
+                        <div id="footer-contact-1"></div>
+                        <div>Мы находимся по адресу г,Москва, проспект Победы 91, офис 71</div>
+                    </div>
+                    <div class="footer-contact">
+                        <div id="footer-contact-2"></div>
+                        <div>Работаем Ежедневно с 10:00 до 23:00</div>
+                    </div>
+                    <div class="footer-contact">
+                        <div id="footer-contact-3"></div>
+                        <div>8 900 555 8881</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Static/index.js"></script>
+</body>
+</html>
